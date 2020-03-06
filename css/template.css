@@ -1,0 +1,45 @@
+body{
+    background-color:#cccccc ;
+}
+#principal{
+    padding: 0px;
+    background-color: white;
+    width :1000px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#entete{
+    background-color:beige;
+    width :1000px;
+    height: 200px;
+}
+#menu{
+    background-color:maroon;
+    width :1000px;
+    height: 40px;
+}
+#menu ul > li{
+ #contenu{
+    background-color:#E9DF8F ;
+    width :1000px;
+    height: 550px;
+    padding-top: 60px;
+}
+#piedpage{
+    background-color:#3B413F;
+    width :1000px;
+    height: 50px;
+    display: inline-block;
+    padding: 13px 7px;
+}
+li > a{
+    color: white;
+    text-decoration: none;
+}
+#menu ul > li:hover{
+    background-color: beige;
+}
+li>a:hover{
+    color:black;
+}

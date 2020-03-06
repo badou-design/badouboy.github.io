@@ -1,0 +1,462 @@
+                               Probleme1
+ALGORITHME Signe
+{cet ALGORITHME demande un reel quelquonque a l'utilisateur puis affiche son signe}
+DEBUT
+   VARIABLE x : REEL 
+   ECRIRE :(entrez un nombre svp:)
+   LIRE:(x)
+   Si x>0
+   ALORS ECRIRE(positif)
+   SINON
+     SI x<0 
+     ALORS ECRIRE(negatif)
+     SINON
+     ECRIRE (nul)
+     FINSI
+   FINSI
+FIN 
+.............................................................................................................
+
+
+
+
+................................................................................................................
+                                   probleme2
+ ALGORITHME Minimum
+{cet ALGORITHME demande a l'utilisateur 2 reel quelconque puis affiche le minimum}
+DEBUT
+   VARIABLE x,y : REELS
+   ECRIRE:(entrez les 2 reels svp:)
+   LIRE:(x,y)
+   SI x > y
+   ALORS 
+    ECRIRE(y est le minimum)
+   SINON  
+   ECRIRE (x est le minimum)
+   FINSI
+FIN
+............................................................................................................................................
+
+
+
+
+ .................................................................................................................................................................................           .............................                       
+                                    Probleme3
+ALGORITHME NombresConsecutifs
+{cet algorithme  demande a l'utilisateur 2 nombres entier n et m puis dire s'ils sont consecutif ou non}
+DEBUT
+   VARIABLES m,n : ENTIERS
+   ECRIRE(entrez les 2 nombre svp :)
+   LIRE(m,n)
+   SI m-n=1 ou m-n=-1
+   ALORS
+   ECRIRE(consecutifs)
+   SINON
+   ECRIRE(pas consecutifs)
+   FINSI
+FIN
+.........................................................................................................................
+
+
+
+
+..............................................................................................................................................
+                                   probleme4
+ ALGORITHME Suites
+ {...................................................}
+ DEBUT
+    VARIABLES n, Un : ENTIERS                                  
+    ECRIRE("entrez un entier naturel svp:")
+    LIRE(n)
+    SI n>0
+    ALORS
+    SELON(n)
+     CAS0 : ECRIRE ("Un=2")
+     CAS1 :ECRIRE("Un=-1")
+     CAS2 :ECRIRE("Un=0")
+     CAS3 :ECRIRE("Un=4")
+     DEFAUT 
+       SI(n%2==0)
+       ALORS
+        ECRIRE ("U",n,"=1")
+       SINON 
+        ECRIRE("U",n,"=-1")
+       FINSI
+    FINSELON
+    SINON
+    ECRIRE("valeur incorrecte!")
+    FINSI
+    FIN      
+    ............................................................................................................
+
+
+
+
+    ...........................................................................................................
+                                  probleme5
+
+
+
+
+
+...............................................................................................................
+                                 probleme1B
+ALGORITHME NombreIndeterminé
+{......}
+DEBUT
+     VARIABLE a:REEL
+     VARIABLE compteur:ENTIER
+     compteur=0
+     FAIRE
+        ECRIRE ("entrez un nombre svp:")
+        LIRE(a)
+     compteur=compteur+1
+     TANTQUE(a!=0)
+     ECRIRE(le nombre de fois est de:",compteur)
+FIN
+...............................................................................................................
+                                      probleme2B
+ALGORITHME  Moyenne
+{............}
+DEBUT
+    VARIABLES n,N(somme des n):REELS
+    VARIABLE b(compteur) : ENTIER
+    b=0
+    N=0
+    FAIRE
+      ECRIRE("entrez un nombre svp:")
+      LIRE(n)
+      b=b+1
+      N=N+n
+      TANTQUE(n!=0)
+      ECRIRE(Moyenne des reels saisis est:",N/b)
+FIN
+.................................................................................................................
+                                      Probleme3B
+ALGORITHME Maximum
+{.....}
+DEBUT  
+     VARIABLES n,max:REELS
+     VARIABLE b:ENTIER
+     b=0
+     FAIRE
+       ECRIRE("entrez un nombre svp:")
+       LIRE(n)
+       b=b+1
+      SI b==1
+       ALORS 
+       max=n
+       SINON
+        SI (max<n et n!=0)
+        ALORS
+        max=n
+        FINSI
+      FINSI
+     TANTQUE(n!=0)
+     ECRIRE(le Maximum est:",max)
+FIN
+..............................................................................................................
+
+
+
+
+...............................................................................................................
+                                        probleme4B
+ALGORITHME PositionDuMax
+DEBUT
+     VARIABLES n,max:REELS
+     VARIABLE b,position:ENTIERS
+     b=0
+     position=0
+     FAIRE
+       ECRIRE("entrez un nombre svp:")
+       LIRE(n)
+       b=b+1
+       position=position+1
+       SI (b==1)
+       ALORS 
+       max=n
+       position=1
+       SINON
+        SI (max<n et n!=0)
+        ALORS
+        max=n
+        position=b
+        FINSI
+      FINSI
+     TANTQUE(n!=0)
+     ECRIRE(le maximum est:",max)
+     ECRIRE(la position du max est:",position)
+FIN
+....................................................................................................................
+
+
+
+
+................................................................................................................
+                                       Probleme5B
+ALGORITHME 
+{.......}
+DEBUT 
+     VARIABLE n,m :  ENTIER
+     FAIRE
+       ECRIRE("entrez un nombre entier svp:")
+       LIRE(n)
+     TANTQUE(n<=0)
+       ECRIRE("les entiers qui sont  inferieurs de n sont: ,")
+       POUR m=n-1 JUSQU'A 0 FAIRE PAR -1
+       ECRIRE(m,")
+       FINPR
+FIN
+................................................................................................................
+
+
+
+
+......................................................................................................................
+                                   probleme6B
+ALGORITHME
+{.......}
+DEBUT
+     VARIABLE n,i :ENTIER
+     VARIABLE r: REEL
+     FAIRE
+     ECRIRE("entrez un entier strictement positif svp:")
+     LIRE(n)
+     TANTQUE(n<=0)
+     r=0
+     POUR i=1 JUSQU'A n FAIRE
+     r=r+i/(i+1.0)
+     FINPR
+     ECRIRE("le resultat du calcul est:",resultat")
+FIN
+.................................................................................................................
+
+
+
+
+.....................................................................................................................        
+                                       probleme7B
+ALGORITHME
+{...........}
+DEBUT
+     VARIABLE n,i,compteur:ENTIER
+     compteur=0
+     FAIRE
+     ECRIRE("entrez un nombre positif svp:")
+     LIRE(n)
+     TANTQUE(n<=0)
+     POUR i=2 JUSQU'A n-1 FAIRE
+     SI (n%i==0)
+     ALORS
+     compteur=compteur+1
+     FINSI
+     FINPR
+     SI (compteur==2)
+     ALORS
+     ECRIRE("le nombre est  premier")
+     SINON
+     ECRIRE("le nombre n'est pas premier")
+     FINSI
+FIN
+................................................................................................................
+
+
+
+
+.................................................................................................................
+                                 probleme8B
+ALGORITHME
+{.................}
+DEBUT 
+     VARIABLE q,x,y :ENTIER
+     FAIRE
+     ECRIRE("veillez saisir les 2 nombres svp:")
+     LIRE(x,y)
+     TANTQUE x<=0 OU y<=0
+     TANTQUE (q!=0) FAIRE
+     r=p%q 
+     p=q
+     q=r
+     FINTQ
+      ECRIRE("le PGDC est: ",)
+FIN
+....................................................................................................................
+
+
+
+
+...............................................................................................................................
+                                      probleme1T
+ALGORITHME
+{......}
+DEBUT
+    VARIABLE r[10]:REEL
+    VARIABLE i,compteur:ENTIER
+    compteur=0
+    POUR i=0 JUSQU'A 9 FAIRE
+    ECRIRE("enrez un reel svp:")
+    LIRE(r[i])
+    FINPR
+    POUR i=0 JUSQU'A 9 FAIRE
+    SI (r[i]>0)
+    ALORS
+    compteur=compteur+1
+    FINSI
+    FINPR
+    ECRIRE("vous avez saisi",compteur,"reels strictement positifs")
+FIN
+.........................................................................................................................
+
+
+
+
+
+..............................................................................................................................
+                                      probleme2T
+ALGORITHME
+{..........}
+DEBUT
+     VARIABLE r[20],min:REEL
+     VARIABLE i,compteur: ENTIER
+     compteur=0
+     POUR i=0 JUSQU'A 19 FAIRE
+     ECRIRE("entrez un reel svp:")
+     LIRE(r[i])
+     compteur=compteur+1
+     SI (compteur==1)
+     ALORS
+     min=r[i]
+     SINON
+      SI(min>r[i])
+      ALORS
+      min=r[i]
+      FINSI
+     FINSI
+     FINPR 
+FIN
+..........................................................................................................................
+
+
+
+
+.........................................................................................................................................
+                                          Probleme3T
+ALGORITHME
+{......}
+DEBUT
+     VARIABLE r[20]:REEL
+     VARIABLE i,compteur:ENTIER
+     compteur=0
+     i=0
+     TANTQUE(r[i]<r(i+1) ET i<19) FAIRE
+     compteur=compteur+1
+     i=i+1
+     FINTQ
+     SI(compteur==20)
+     ALORS
+     ECRIRE("le vecteur est trié dans l'ordre croissant")
+     SINON
+     ECRIRE("le vecteur n'est pas trié dans l'ordre croissant")
+     FINSI
+FIN
+........................................................................................................................
+
+
+
+
+.............................................................................................................................
+                                             Probleme1R
+ENTIER FONCTION LireEntier(DONNEE:CHAINE message)
+DEBUT
+     VARIABLE n :ENTIER
+     ECRIRE (message)
+     LIRE(n)
+     RETOURNER n
+FIN
+................................................................................................................................
+
+
+
+
+
+....................................................................................................................
+                                                  Probleme2R
+REEL FONCTION LireReel(DONNEE:CHAINE message)
+DEBUT
+     VARIABLE r:REEL
+     ECRIRE(message)
+     LIRE(r)
+     RETOURNER r 
+FIN
+.......................................................................................................................
+
+
+
+
+.............................................................................................................................
+                                                 Probleme3R
+ALGORITHME Signe
+{......}
+{......}
+   REEL FONCTION Signe(DONNEE:REEL,z)
+DEBUT
+    SI (z<0)
+    ALORS
+    RETOURNER -1
+    SINON 
+    SI (z>0)
+    ALORS
+    RETOURNER 1
+    SINON 
+    RETOURNER 0
+    FINSI
+    FINSI
+FIN
+DEBUT  
+     VARIABLE n :ENTIER 
+     VARIABLE r:REEL
+     ECRIRE ("entrez un reel svp:")
+     LIRE(r)
+     n=signe(r)
+     SELON(n)
+     CAS0:ECRIRE("nul")
+     CAS1:ECRIRE("positif")
+     CAS-1:ECRIRE("negatif")
+     FINSELON
+FIN
+..........................................................................................................................
+
+
+
+
+......................................................................................................................................
+                                            Probleme9R
+ALGORITHME
+     PROCEDURE getInformation(DONNEE:REEL r[,],RESULTAT :REEL max,REEL min, REEL moy)
+DEBUT
+     VARIABLE Somme: REEL 
+     VARIABLE i:ENTIER
+     Somme=0
+     min=r[0]
+     max=r[0]
+     POUR i=0 JUSQU'A 19 FAIRE
+     Somme=Somme+r[i]
+     SI (min>r[i])
+     ALORS 
+     min=r[i]
+     FINSI
+     SI (max<r[i])
+     ALORS
+     max=r[i]
+     FINSI
+     FINPR
+      moy=somme/20
+FIN
+..........................................................................................................................
+
+
+
+
+
+...................................................................................................................

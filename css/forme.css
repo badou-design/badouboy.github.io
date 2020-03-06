@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    color: #0055ff;
+}
+form{
+    background-color: #fafafa;
+    padding:30px;
+    width:600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    margin-top: 10px;
+    display: block;
+}
+input,textarea,select,option{
+    background-color: #fff3f3;  
+}
+input + label{
+    display: inline;
+}
